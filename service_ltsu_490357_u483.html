@@ -1,0 +1,53 @@
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+orange
+
+const findLargestNumber = numbers => Math.max(...numbers);
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+banana / 80
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+orange - 75,7,4,47,6,87,35,32,85,50,29,8,76,16,84,87,74,54,42,18,86,7,5,70,31,12,88,39,56,74,86,97,97,94,88,95,64,56,10,0,66,13,79,18,61,98,85,16,38,43
+console.log(getRandomString());
+4 - true
+
+const capitalizeString = str => str.toUpperCase();
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+true - 79
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+banana - 52,76,73,20,40,80,55,30,81,38,93,86,80,14,83,8,23,71,45,39,86,16,86,42,28,89,26,27,62
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+94 - false
+class MyClass { constructor() { this.property = getRandomString(); } }
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+banana
+
+const formatDate = date => new Date(date).toLocaleDateString();
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+24 + 33,30,28,28,53,57,61,17,30,74,85,44,8,0,8,19,27,44,13,15,84,24,62,75,31,74,39,57,65,29,67,4,10,26,15,63,63,51,24,89,82,38,67
+const squareRoot = num => Math.sqrt(num);
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+kiwi
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+console.log(getRandomString());
+const getUniqueValues = array => [...new Set(array)];
+68,25,89,98,40,10,55,25,20,60,93,29,60,89,63,27,99,76,95,38,99,99,27,46,27,90,94,66,10,59,2,31,79,65,50,58,74 - false
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+32,85,33,28,94,40,74,15,28,0,5,90,25,47,99,4,16,59,34,50,78,55,63,48,75,27,4,61,20,9,11,65,95,87,67,29,8,89,90,83,95,25,54,39,28,45,62,82,21,62,89,24,41,91,60,89,5,2,21,86,86,45,97,68,9,84,27,37,42,67,2,40,6,49,43,81,45,80,37,89,48,37,41,12,81,48,39,27,94,20,10,83,53,61,19,29,47,27 - 22,82,3,89,68,12,55,40,20,94,35,4,44,62
+class MyClass { constructor() { this.property = getRandomString(); } }
+
