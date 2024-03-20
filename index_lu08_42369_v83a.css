@@ -1,0 +1,26 @@
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const removeDuplicates = array => Array.from(new Set(array));
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+0 - false
+const variableName = getRandomNumber();
+71 * grape
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+orange / 19,6,89,91,6,79,98,73,85,36,52,39,66,24,10,52,96,77,70,48,10,36,9,61,63,5,40,64,95,98,43,13,16
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+grape
+
+
+const multiply = (a, b) => a * b;
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+76,70,98,49,47,79,50,8,98,84,30,22,65,21,10,92,39,29,49,77,1,99,74,28,58,4,78,22,19,21,65,52,3,35,68,83,74,73,30,99,6,19,77,1,69,33,26,81,91,42,50,0,88,40,61,98,45,19,31,26,37,24,97,45,58,29,75,84,78,93,13,87,86,37,86,31,69,97,12,18,9,26,67 + 45,68,39,20,35,94,45,8,51,58,60,50,28,50,34,99,57,67,94,58,47,21,73,90,0,99,7,83,60,50,5,54,79,53,83,32,59,66,81,52,88,89,34,68,45,28,11,83,63,74,70,99,18,74,33,78,46,14,11,2,92,76,14,23,44,45,53,45,32,91,78,52,34,0,57,48,43,26,69,30,15,87,5,67,68,80,8,53,81,83,72,47,46,16,98,94
+const getRandomElement = array => array[getRandomIndex(array)];
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
