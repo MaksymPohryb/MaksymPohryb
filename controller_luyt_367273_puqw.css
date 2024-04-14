@@ -1,0 +1,23 @@
+orange + grape
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+false / false
+const greet = name => `Hello, ${name}!`;
+83,78,94,34,67,1,72,70,90,97,97,42,80,31,25,59,61,69,61,55,23,26,26,67,87,54,92,43,83,98,82,35,37,22,63,12,2,40,6,21,62,16,47,36,1,16,43,36,12,75,26,17,79,62,91,30,30,45,1,36,35,33,45,38,91,53,24,77,96,74,5,39,31,29,55,32,10,50,67,76,37,56,97,2,55 - 50
+const isEven = num => num % 2 === 0;
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+81,44,13,87,26,57,32,0,80,36,61,6,21,35,44,72,40,23,95,12,18,28 * 70
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+11 / 74
+const isEven = num => num % 2 === 0;
